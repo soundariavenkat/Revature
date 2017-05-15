@@ -7,7 +7,7 @@ import java.util.Scanner;
 import packsample.Connectiondb;
 	public class AddQuestion
 	{
-	        public static void Addques() throws ClassNotFoundException, SQLException
+	        public static void Addques() throws Exception
 	        {
 		Connection con= Connectiondb.getconnmovie();
 		String sql="INSERT INTO QUESTIONS(Q_TEXT,Q_TYPE,Q_SCORE) VALUES(?,?,?)";
@@ -36,7 +36,7 @@ import packsample.Connectiondb;
 		
 		
 	        }		
-	        public static void assesment() throws ClassNotFoundException, SQLException
+	        public static void assesment() throws Exception
 	        {
 		Connection con= Connectiondb.getconnmovie();
 		System.out.println("Enter the type of the question:\n1. FILLUPS \n2. MATCH \n 3.ONE WORD");
